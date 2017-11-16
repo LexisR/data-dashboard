@@ -1,3 +1,21 @@
 /*
  * Estilos de tu proyecto
  */
+ /*colores Lab: 
+ gris:#363636;
+ amarillo:#F7B500;
+ gris claro:#757575;*/
+ 
+*{
+	margin:0;
+	padding: 0;
+}
+img{
+	
+	display: inline-block;
+
+}
+.image-contain{
+	
+	text-align: center;
+}
