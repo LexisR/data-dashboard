@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maxium-scale=1.0,minium-scale=1.0">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/favico.ico">
     <link rel="icon" type="image/png" href="./favicon.png">
@@ -13,18 +16,26 @@
   <body>
     <!-- Inicio de header, sofia -->
     <header>
-      <div class="image-contain">
-        <img src="img/logo_laboratoria-09.svg" alt="logo" height="54"> 
+      <div class="container">
+        <img src="img/logo_laboratoria-09.svg" alt="logo" height="110"> 
         <div class="botones-derecha">
           <button class="btn_1"><a href="">Turno AM<span><i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
-          <button> <a href="btn_2">ES/IN</a> </button>
+          <button class="btn_2">  <a href="btn_2">ES/IN</a> </button>
         </div>
       </div>
     </header>
+    <!--seccion vacia-->
+    <div   class="container">
+      <section id= "vacia" class="main row">
+        
+      </section>
+    </div>
+    <!-- fin sección vacia-->
      <!-- primera seccion, sofia -->
-    <section class="menu">
-      <nav>
-        <h1>Santiago de Chile <i class="fa fa-caret-down" aria-hidden="true"></i></h1>
+     <div class="container">
+    <section class="main row">
+      <nav class="col-xs -col-sm -col-md -col-lg-12">
+        <h1>Santiago de Chile <button><i class="fa fa-caret-down" aria-hidden="true"></i></button></h1>
         <ul>
           <li><a href="">Overview</a></li>
           <li><a href="">Students</a></li>
@@ -32,8 +43,31 @@
         </ul>
       </nav>
     </section>
-     <!--tercera seccion, Lexis -->
-    <section>
+    </div>
+     <!--tercera seccion, Lexis  dos filas de 3 columnas-->
+     <div class="row">
+      <div class="col-md-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad pariatur, atque aut, accusantium sunt quo et. Nulla dolor, laudantium quis necessitatibus quasi voluptatibus, quisquam in quia voluptas ea quidem blanditiis!</p>
+      </div>
+      <div class="col-md-4">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolorem nobis ratione dolorum odio quas cum quod obcaecati amet eos, facilis mollitia libero nisi nam animi nihil enim delectus, ea.</p>
+      </div>
+      <div class="col-md-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium harum, unde doloribus quasi ullam maiores asperiores odit, sit autem est architecto voluptate, consequuntur iusto sequi. Eos a harum perspiciatis dolorum.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto cumque dignissimos praesentium delectus corporis ab fugiat nisi dolorum temporibus unde voluptatibus excepturi laudantium optio aperiam, repellat, minima dolore commodi?</p>
+      </div>
+      <div class="col-md-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim consequuntur dolor corrupti dolorem nihil molestias, tenetur consectetur eos temporibus iure velit saepe provident praesentium, nulla id itaque, quibusdam eius iusto!</p>
+      </div>
+      <div class="col-md-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam voluptate quis? Vero ratione recusandae deserunt debitis eos ab, atque doloremque modi animi commodi! Modi iste quia culpa incidunt beatae!</p>
+      </div>
+       
+     </div>
+    <!--<section class="main row">
       <div id="chart_div"></div>
       <div class="graf-asistencia"></div>
       <div class="graf-logros"></div>
@@ -42,10 +76,13 @@
       <div class="life-skills"></div>
       <div class="satisfaction"></div>
       <div class="teacher-rating"></div>
-      <div class="Jedi-rating"></div>
+      <div class="Jedi-rating"></div>-->
     </section>
+  
 	  <script src="./js/data.js"></script>
 	  <!-- Aquí va tus archivos JS -->
      <script src="./js/app.js"></script>
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
   </body> 
 </html>
