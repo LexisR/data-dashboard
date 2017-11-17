@@ -15,15 +15,13 @@ body{
 }
 /*HEADER*/
 img{
-	
 	display: inline-block;
 	margin: 0 auto;
 
 }
 .image-contain{
-	
 	text-align: center;
-	background-color:#363636;
+	background-color:#F7B500;
 	padding-top: 21px;	
 }   
 
@@ -72,3 +70,4 @@ h1{
 	font-size: 30px;
 	font-weight: 500;
 }
+ 
