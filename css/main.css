@@ -14,17 +14,25 @@ body{
 	font-family: 'Source sans pro';
 }
 /*HEADER*/
+
 img{
 	display: inline-block;
 	margin: 0 auto;
+	margin-left: -33px;
 }
 
 .image-contain{
 	text-align: center;
-	background-color:#F7B500;
+	background-color:#fff;
 	padding-top: 21px;	
 }   
-
+a{
+	text-decoration: none;
+}
+.btn_1 a{
+	text-decoration: none;
+	background-color: #F7B500;
+}
 .botones-derecha{
 	float: right;
   overflow: hidden;
@@ -32,26 +40,13 @@ img{
 }
 
 
-.botones-derecha li ul{
-	display: none;
-	position:absolute;
-}
-
-.botones-derecha  a:hover > ul{
-	display: block;
-}
-
-.botones-derecha  a:hover{
-	background-color: #757575;
-	display: block;
-	text-align: center;
-}
-
-a{
-	text-decoration: none;
-}
-
 /*FIN HEADER*/
+/*	SECCION VACIA*/
+#vacia{
+	width: 100%;
+	height:60px;
+	background-color: #757575;
+}
 
 /*SECCION1 */
 nav ul li{
@@ -66,4 +61,6 @@ h1{
 	font-size: 30px;
 	font-weight: 500;
 }
- 
+.menu{
+	background-color:#F7B500;
+ 	height: 150px; 
