@@ -17,8 +17,8 @@ body{
 img{
 	display: inline-block;
 	margin: 0 auto;
-
 }
+
 .image-contain{
 	text-align: center;
 	background-color:#F7B500;
@@ -27,32 +27,28 @@ img{
 
 .botones-derecha{
 	float: right;
-    overflow: hidden;
-    padding-bottom: 24px;
+  overflow: hidden;
+  padding-bottom: 24px;
 }
-.botones-derecha ul li{
-	display: inline-block;
-	padding: 15 px 10px;
-	background-color: #F7B500;
-    border-radius: 10%;
-    width: 66px;
-    height: 35px;
-}
+
+
 .botones-derecha li ul{
 	display: none;
 	position:absolute;
 }
-.botones-derecha li a:hover > ul{
+
+.botones-derecha  a:hover > ul{
 	display: block;
 }
-.botones-derecha li a:hover{
+
+.botones-derecha  a:hover{
 	background-color: #757575;
 	display: block;
 	text-align: center;
 }
+
 a{
 	text-decoration: none;
-
 }
 
 /*FIN HEADER*/

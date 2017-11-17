@@ -9,7 +9,7 @@ function drawChart() {
           data.addColumn('string', 'Topping');
           data.addColumn('number', 'Slices');
           data.addRows([
-            ['Mushrooms', 3],
+            ['Año', 3],
             ['Onions', 1],
             ['Olives', 1],
             ['Zucchini', 1],
