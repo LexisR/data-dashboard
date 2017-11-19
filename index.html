@@ -4,136 +4,121 @@
     <meta charset="utf-8">
     <title>Data Dashboard</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/favico.ico">
     <link rel="icon" type="image/png" href="./favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-     </head>
+  </head>
   <body>
     <!-- Inicio de header, sofia -->
     <header>
       <div class="wrapper">
-        <div ><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></div>
         <div class="logo">
-        <img src="img/logo_laboratoria-09.svg" alt="logo" height="80"></div>
-        <nav>
-          <a href="#">Turno</a>
-          <a href="#">ES/ENG</a>
-        </nav>
+          <img src="img/logo_laboratoria-09.svg" alt="logo" height="80">
+        </div>
+      <button type="button"  class="btn btn-outline-warning">ES/EN</button>
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">TURNOS
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">TURNO AM</a>
+          <a class="dropdown-item" href="#">TURNO PM</a>
+        </div>
       </div>
-    </header>
-    <!--seccion vacia-->
-    <div   class="">
-      <section id= "vacia" class="">
-      </section>
+      </div>
+    </header>|
+    <!-- Seccion de resumen -->  
+    <div class="row">
+      <div class="col-6 col-md-4">
+        <div class="btn-group1">
+          <button type="button" class="btn btn-danger" >Santiago 2017-G2</button>
+          <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">SCL 2017-G1</a>
+            <br><a class="dropdown-item" href="#">SCL 2016-G1</a>
+            <br><a class="dropdown-item" href="#">SCL 2016-G2</a>
+          </div>
+        </div>
+        <div class="estudiante"> Estudiantes presentes 87%</div>
+        <div class="estudiante"> Estudiantes deserción  13%</div>
+      </div>
+      <div class="col-6 col-md-4">
+          <div class="btn-group2">
+              <button type="button" class="btn btn-danger" >Peru 2017-G2</button>
+              <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">PE 2017-G1</a>
+                <br><a class="dropdown-item" href="#">PE 2016-G1</a>
+                <br><a class="dropdown-item" href="#">PE 2016-G2</a>
+              </div>
+            </div>
+            <div class="estudiante"> Estudiantes presentes 87%</div>
+            <div class="estudiante"> Estudiantes deserción  13%</div>
+      </div>
+      <div class="col-6 col-md-4">
+          <div class="btn-group3">
+              <button type="button" class="btn btn-danger" >Mexico 2017-G2</button>
+              <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">CDM 2017-G1</a>
+                <br><a class="dropdown-item" href="#">CDM 2016-G1</a>
+                <br><a class="dropdown-item" href="#">CDM 2016-G2</a>
+              </div>
+            </div>
+            <div class="estudiante"> Estudiantes presentes 87%</div>
+            <div class="estudiante"> Estudiantes deserción  13%</div>
+      </div>
     </div>
     <!-- fin sección vacia-->
+     <!-- Seccion principal -->
     <div id="sede" class="container"><h1>Santiago de Chile <a href="#"><span class="glyphicon glyphicon-menu-down"></span></a></h1></div>
-     <!-- primera seccion, sofia -->
-
-     <div class="container">
-    <section id="section-1" class="container">
-     <nav class="col-xs -col-sm -col-md -col-lg-12">
-        <ul>
-          <li><a href="">Overview</a></li>
-          <li><a href="">Students</a></li>
-          <li><a href="">Teachers</a></li>
+    <div class="container">
+      <section id="section-1" class="container">
+      <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#overview" role="tab">OVERVIEW</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#students" role="tab">STUDENTS</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" data-toggle="tab" href="#teachers" role="tab">TEACHERS</a>
+          </li>
         </ul>
-      </nav>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane active" id="overview" role="tabpanel">
+          <!-- contenido principal en graficas -->
+          <div id="chart_div3"></div>
+          <div id="chart_div"></div>
+          <div id="chart_div1" style="width: 40%; height: 360px;"></div>
+        </div>
+        <div class="tab-pane" id="students" role="tabpanel">ACA VA EL PERFIL ESTUDIANTE</div>
+        <div class="tab-pane" id="teachers" role="tabpanel">ACA VA PERFIL DE PROFESOOR</div>
+      </div>
     </section>
-    </div>
-     <!--tercera seccion, Lexis  dos filas de 3 columnas-->
-     <div class="row-wrapper">
-      <div class="col-md-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad pariatur, atque aut, accusantium sunt quo et. Nulla dolor, laudantium quis necessitatibus quasi voluptatibus, quisquam in quia voluptas ea quidem blanditiis!</p>
-      </div>
-      <div class="col-md-4">
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolorem nobis ratione dolorum odio quas cum quod obcaecati amet eos, facilis mollitia libero nisi nam animi nihil enim delectus, ea.</p>
-      </div>
-      <div class="col-md-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium harum, unde doloribus quasi ullam maiores asperiores odit, sit autem est architecto voluptate, consequuntur iusto sequi. Eos a harum perspiciatis dolorum.
-        </p>
-      </div>
-      <div class="col-md-4">
-        <p4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto cumque dignissimos praesentium delectus corporis ab fugiat nisi dolorum temporibus unde voluptatibus excepturi laudantium optio aperiam, repellat, minima dolore commodi?</p>
-      </div>
-      <div class="col-md-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim consequuntur dolor corrupti dolorem nihil molestias, tenetur consectetur eos temporibus iure velit saepe provident praesentium, nulla id itaque, quibusdam eius iusto!</p>
-      </div>
-      <div class="col-md-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam voluptate quis? Vero ratione recusandae deserunt debitis eos ab, atque doloremque modi animi commodi! Modi iste quia culpa incidunt beatae!</p>
-      </div>
-       
-     </div>
-     <div class="col-md-4">
-        <p4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto cumque dignissimos praesentium delectus corporis ab fugiat nisi dolorum temporibus unde voluptatibus excepturi laudantium optio aperiam, repellat, minima dolore commodi?</p>
-      </div>
-      <div class="col-md-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim consequuntur dolor corrupti dolorem nihil molestias, tenetur consectetur eos temporibus iure velit saepe provident praesentium, nulla id itaque, quibusdam eius iusto!</p>
-      </div>
-      <div class="col-md-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam voluptate quis? Vero ratione recusandae deserunt debitis eos ab, atque doloremque modi animi commodi! Modi iste quia culpa incidunt beatae!</p>
-      </div>
-       <div class="col-md-4">
-        <p4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto cumque dignissimos praesentium delectus corporis ab fugiat nisi dolorum temporibus unde voluptatibus excepturi laudantium optio aperiam, repellat, minima dolore commodi?</p>
-      </div>
-      <div class="col-md-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim consequuntur dolor corrupti dolorem nihil molestias, tenetur consectetur eos temporibus iure velit saepe provident praesentium, nulla id itaque, quibusdam eius iusto!</p>
-      </div>
-      <div class="col-md-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam voluptate quis? Vero ratione recusandae deserunt debitis eos ab, atque doloremque modi animi commodi! Modi iste quia culpa incidunt beatae!</p>
-      </div>
-       <div class="col-md-4">
-        <p4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto cumque dignissimos praesentium delectus corporis ab fugiat nisi dolorum temporibus unde voluptatibus excepturi laudantium optio aperiam, repellat, minima dolore commodi?</p>
-      </div>
-      <div class="col-md-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim consequuntur dolor corrupti dolorem nihil molestias, tenetur consectetur eos temporibus iure velit saepe provident praesentium, nulla id itaque, quibusdam eius iusto!</p>
-      </div>
-      <div class="col-md-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam voluptate quis? Vero ratione recusandae deserunt debitis eos ab, atque doloremque modi animi commodi! Modi iste quia culpa incidunt beatae!</p>
-      </div>
-       <div class="col-md-4">
-        <p4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto cumque dignissimos praesentium delectus corporis ab fugiat nisi dolorum temporibus unde voluptatibus excepturi laudantium optio aperiam, repellat, minima dolore commodi?</p>
-      </div>
-      <div class="col-md-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim consequuntur dolor corrupti dolorem nihil molestias, tenetur consectetur eos temporibus iure velit saepe provident praesentium, nulla id itaque, quibusdam eius iusto!</p>
-      </div>
-      <div class="col-md-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam voluptate quis? Vero ratione recusandae deserunt debitis eos ab, atque doloremque modi animi commodi! Modi iste quia culpa incidunt beatae!</p>
-      </div>
-       <div class="col-md-4">
-        <p4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto cumque dignissimos praesentium delectus corporis ab fugiat nisi dolorum temporibus unde voluptatibus excepturi laudantium optio aperiam, repellat, minima dolore commodi?</p>
-      </div>
-      <div class="col-md-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim consequuntur dolor corrupti dolorem nihil molestias, tenetur consectetur eos temporibus iure velit saepe provident praesentium, nulla id itaque, quibusdam eius iusto!</p>
-      </div>
-      <div class="col-md-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam voluptate quis? Vero ratione recusandae deserunt debitis eos ab, atque doloremque modi animi commodi! Modi iste quia culpa incidunt beatae!</p>
-      </div>
-       
-    <!--<section class="main row">
-      <div id="chart_div"></div>
-      <div class="graf-asistencia"></div>
-      <div class="graf-logros"></div>
-      <div class="graf-NPS"></div>
-      <div class="tech-skills"></div>
-      <div class="life-skills"></div>
-      <div class="satisfaction"></div>
-      <div class="teacher-rating"></div>
-      <div class="Jedi-rating"></div>-->
     </section>
-  <footer>
-    <div id="footer" class="container">
-      <h2>by L&S co.</h2>
-    </div>
-  </footer>
+     <!-- Footer -->
+    <footer>
+      <div id="footer" class="container">
+        <h2>By L&S co.</h2>
+      </div>
+    </footer>
 	  <script src="./js/data.js"></script>
 	  <!-- Aquí va tus archivos JS -->
-     <script src="js/app.js"></script>
-     <script src="js/jquery.js"></script>
-     <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body> 
 </html>
