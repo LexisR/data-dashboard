@@ -22,6 +22,7 @@ header{
 }
 
 
+
 .glyphicon-chevron-left{
 	font-size: 40px;
 	top:65px;
@@ -81,14 +82,13 @@ img{
 
 /*SECCION SEDES*/
  #sede{
- 	background-color: #F7B500;
+	 background-color: #F7B500;
+	 margin-top: 40px;
 }
 /*FIN SECCION SEDES*/
 
 /* SECCION DE RESUMEN */
-.row {
-	margin-left: 155px;
-}
+
 
 .btn-danger {
 	color: #fff;
@@ -96,6 +96,9 @@ img{
 	border-color: #F7B500;
 }
 /*FIN SECCION RESUMEN*/
+.row{
+	font-size: 20px;
+}
 
 /*SECCION PRINCIPAL*/
 
