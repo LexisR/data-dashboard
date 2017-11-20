@@ -136,6 +136,27 @@ input{
 }
 /*FIN SECCION PRINCIPAL*/
 
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+a img{
+	margin-left: 10px; 
+	margin-top:10px; 
+}
+.justify-content-center{
+	text-align: center;
+}
+.btn-group-lg>.btn, .btn-lg{
+	font-size: 12px;
+}
+
 /*FOOTER*/
 footer{
 	width: 100%;
