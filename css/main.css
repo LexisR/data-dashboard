@@ -134,7 +134,24 @@ input{
 	border-color: #F7B500;
 }
 /*FIN SECCION PRINCIPAL*/
+/*SECCION PROFESORES*/
 
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+a img{
+	margin-left: 10px; 
+	margin-top:10px; 
+}
+.justify-content-center{
+	text-align: center;
+}
 /*FOOTER*/
 footer{
 	width: 100%;
