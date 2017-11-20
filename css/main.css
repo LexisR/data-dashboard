@@ -21,7 +21,17 @@ header{
 	background-color: #cdcbcb;
 }
 
+.botones-inicio{
+	float: right;
+	margin-top: 40px;
+}
 
+.btn-group, .btn-group-vertical {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 10px;
+}
 
 .glyphicon-chevron-left{
 	font-size: 40px;
@@ -32,7 +42,7 @@ header div div a:hover{
 	color:#F7B500;
 }
 
-img{
+.logo img{
 	margin-left:550px;
 	margin-top: 20px;
 }
@@ -101,13 +111,37 @@ img{
 }
 
 /*SECCION PRINCIPAL*/
+input{
+	color:#cdcbcb;
+	border-radius: 4px;	
+}
 
+.btn-success {
+	color: #fff;
+	background-color: #F7B500;
+	border-color: #F7B500;
+}
+
+.btn-info {
+	color: #fff;
+	background-color: #F7B500;
+	border-color: #F7B500;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #F7B500;
+	border-color: #F7B500;
+}
 /*FIN SECCION PRINCIPAL*/
 
 /*FOOTER*/
 footer{
 	width: 100%;
-	height: auto;
-	background-color:#363636;
-	color: #fff;
+	height: 40px;
+	background-color:#cdcbcb;
+	color: #000;
+	text-align: center;
+	
 }
+
